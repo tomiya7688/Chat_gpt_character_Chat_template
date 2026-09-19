@@ -10,12 +10,14 @@ GitHubリポジトリにキャラクター設定を置き、ChatGPTにこのリ�
 
 1. `WORLD.md`
 2. `CHARACTERS.md`
-3. `chatgpt/PROMPT.md`
+3. `assets/` 内のキャラクター画像（存在する場合）
+4. `chatgpt/PROMPT.md`
 
 設定の優先順位もこの順です。
 
 - `WORLD.md` — 世界・舞台・共通ルール
 - `CHARACTERS.md` — キャラクター固有設定
+- `assets/` — キャラクターの外見・デザインを示す画像資料
 - `chatgpt/PROMPT.md` — ChatGPTがどう演じるか
 
 同じ内容について過去に読み込んだ設定と現在の `main` ブランチが食い違う場合は、現在の `main` ブランチを優先してください。
@@ -39,6 +41,7 @@ chatgpt/PROMPT.md
 ```text
 このリポジトリの最新版を読んで、この設定に沿ってキャラクターとして会話して。
 WORLD.md、CHARACTERS.md、chatgpt/PROMPT.md を優先して参照して。
+assets/ にキャラクター画像がある場合は、それも外見の参考資料として確認して。
 ```
 
 これだけで開始できる構成を想定しています。
@@ -51,6 +54,10 @@ WORLD.md、CHARACTERS.md、chatgpt/PROMPT.md を優先して参照して。
 ├── WORLD.md
 ├── CHARACTERS.md
 ├── TEMPLATE_GUIDE.md
+├── assets/
+│   ├── README.md
+│   ├── character-a.png
+│   └── character-b.png
 └── chatgpt/
     └── PROMPT.md
 ```
@@ -89,6 +96,20 @@ WORLD.md、CHARACTERS.md、chatgpt/PROMPT.md を優先して参照して。
 - 知識量
 - 他キャラクターとの関係
 - やること / やらないこと
+
+### assets/
+
+キャラクターの外見やデザインを画像で指定したい場合に使います。
+
+例：
+
+- `assets/character-a.png`
+- `assets/character-b.png`
+- 表情差分や衣装差分など
+
+画像を置いた場合は、`CHARACTERS.md` から対応する画像パスを明記してください。ChatGPTが画像を参照できる環境では、文章設定と合わせて外見の参考資料として扱えます。
+
+画像は口調や性格を決めるものではなく、主に外見・色・形・服装などの視覚資料として扱います。文章設定と画像が食い違う場合にどちらを優先するかも、必要なら `CHARACTERS.md` に明記してください。
 
 ### chatgpt/PROMPT.md
 
