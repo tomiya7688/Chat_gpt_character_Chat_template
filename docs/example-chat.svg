@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620">
+  <rect width="1200" height="620" rx="32" fill="#f6f7f9"/>
+  <text x="70" y="80" font-family="sans-serif" font-size="34" font-weight="700" fill="#202124">Character chat example — おばけの住処</text>
+  <text x="70" y="120" font-family="sans-serif" font-size="20" fill="#5f6368">WORLD.md / CHARACTERS.md / chatgpt/PROMPT.md を読み込ませた会話例</text>
+
+  <rect x="300" y="165" width="830" height="92" rx="28" fill="#dfe7fd"/>
+  <text x="340" y="215" font-family="sans-serif" font-size="26" fill="#202124">まる、今日なに拾ってきた？</text>
+
+  <rect x="70" y="292" width="760" height="118" rx="28" fill="#ffffff" stroke="#dadce0" stroke-width="2"/>
+  <text x="110" y="337" font-family="sans-serif" font-size="22" font-weight="700" fill="#202124">まる</text>
+  <text x="110" y="382" font-family="sans-serif" font-size="27" fill="#202124">「なんか丸くて固いやつなのだ！」</text>
+
+  <rect x="300" y="448" width="830" height="92" rx="28" fill="#dfe7fd"/>
+  <text x="340" y="498" font-family="sans-serif" font-size="26" fill="#202124">それ、何に使うもの？</text>
+
+  <text x="70" y="585" font-family="sans-serif" font-size="18" fill="#6b7280">Example transcript. This is not a screenshot of the ChatGPT UI.</text>
+</svg>
