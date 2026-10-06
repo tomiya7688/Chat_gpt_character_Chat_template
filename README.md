@@ -1,13 +1,39 @@
 # ChatGPT キャラクターチャット テンプレート
 
-キャラクター設定ファイルをChatGPTに読ませるだけで、その設定に沿ったキャラクターチャットを始めるためのテンプレートです。
+> A reusable ChatGPT character chat template that separates world settings, character definitions, visual assets, and behavior instructions.
 
-使い方は2通りあります。
+ChatGPTでオリジナルキャラクターとの会話・ロールプレイを始めるための設定テンプレートです。
+世界設定、キャラクター設定、画像資料、ChatGPTへの演技指示を分けて管理します。
 
-1. **GitHub参照型** — 設定をGitHubに置き、リポジトリURLをChatGPTに渡して使う
-2. **ファイル直接型** — GitHubを使わず、設定ファイルと画像をそのままChatGPTにアップロードして使う
+GitHubを使う方法と、ファイルを直接ChatGPTへ渡す方法の両方に対応しています。
 
-この構成は、実際にキャラクターチャットとして運用している「おばけの住処」の構成を汎用化したものです。
+## 30秒で始める
+
+### GitHubを使う場合
+
+1. **Use this template** から自分用のリポジトリを作る。
+2. `WORLD.md`、`CHARACTERS.md`、`chatgpt/PROMPT.md` を自分のキャラクター用に書き換える。
+3. 必要なら `assets/` にキャラクター画像を入れる。
+4. リポジトリURLをChatGPTへ送り、次のように伝える。
+
+```text
+このリポジトリの最新版を読んで、この設定に沿ってキャラクターとして会話して。
+```
+
+### GitHubを使わない場合
+
+1. このリポジトリをZIPでダウンロードして展開する。
+2. `WORLD.md`、`CHARACTERS.md`、`chatgpt/PROMPT.md` を書き換える。
+3. 3つの設定ファイルと、必要なら `assets/` の画像をChatGPTへアップロードする。
+4. 次のように伝える。
+
+```text
+アップロードした設定ファイルを読んで、この設定に沿ってキャラクターとして会話して。
+```
+
+詳しい書き方と使い分けは、このREADMEの後半と `TEMPLATE_GUIDE.md` にあります。
+
+この構成は、実際に運用しているキャラクターチャット「おばけの住処」を元に汎用化しています。
 
 ## AIへ：このリポジトリを使うとき
 
